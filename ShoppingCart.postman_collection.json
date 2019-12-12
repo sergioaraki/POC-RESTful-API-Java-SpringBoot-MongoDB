@@ -1,0 +1,164 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ShoppingCart",
+		"_postman_id": "ef203857-89b5-31f7-b449-d86e02b87b9c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/products",
+			"request": {
+				"url": "localhost:8080/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\":\"product 1\",\n  \"unit_price\":10,\n  \"stock\": 100\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/products",
+			"request": {
+				"url": "localhost:8080/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\":\"product 2\",\n  \"unit_price\":20,\n  \"stock\": 0\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/products",
+			"request": {
+				"url": "localhost:8080/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\":\"product 3\",\n  \"unit_price\":20.50,\n  \"stock\": 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/carts",
+			"request": {
+				"url": "localhost:8080/carts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fullName\":\"Juan Perez\",\n  \"email\":\"juanperez@mail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/carts/5df295cee4b025c464c81aa3/products",
+			"request": {
+				"url": "localhost:8080/carts/5df295cee4b025c464c81aa3/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\":\"5df28b92e4b025c464c81a9c\",\n  \"quantity\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/carts/5df295cee4b025c464c81aa3/checkouts",
+			"request": {
+				"url": "localhost:8080/carts/5df295cee4b025c464c81aa3/checkouts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/products",
+			"request": {
+				"url": "localhost:8080/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/carts/5df28be5e4b025c464c81aa0/",
+			"request": {
+				"url": "localhost:8080/carts/5df28be5e4b025c464c81aa0/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/carts/5df28be5e4b025c464c81aa0/products",
+			"request": {
+				"url": "localhost:8080/carts/5df28be5e4b025c464c81aa0/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
